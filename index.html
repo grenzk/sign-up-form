@@ -7,5 +7,53 @@
     <link rel="stylesheet" href="assets/styles.css" />
     <title>Survey Form</title>
   </head>
-  <body></body>
+  <body>
+    <h1 id="title">Contact Me</h1>
+    <p id="description">Any questions or remarks? Just write me a message!</p>
+    <form id="survey-form" action="#" method="get">
+      <label for="first-name">First Name</label>
+      <div><input type="text" id="first-name" name="first-name" /></div>
+      <label for="last-name">Last Name</label>
+      <div><input type="text" id="last-name" name="last-name" /></div>
+      <label for="user_email">Email</label>
+      <div>
+        <input
+          type="email"
+          id="user_email"
+          name="email"
+          placeholder="you@example.com"
+        />
+      </div>
+      <label for="phone-number">Phone</label>
+      <div>
+        <input
+          type="tel"
+          id="phone-number"
+          name="phone-number"
+          placeholder="123-45-678"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          required
+        />
+      </div>
+      <h1>What type of website do you need?</h1>
+      <input type="radio" id="personal" name="website_type" value="personal" />
+      <label for="personal">Personal</label>
+      <input
+        type="radio"
+        id="educational"
+        name="website_type"
+        value="educational"
+      />
+      <label for="educational">Educational</label>
+      <input type="radio" id="sport" name="website_type" value="sport" />
+      <label for="sport">Sport</label>
+
+      <div>
+        <textarea name="" id="" cols="30" rows="10">
+        Some initial content</textarea
+        >
+      </div>
+      <button type="submit" name="button" value="Send">Submit</button>
+    </form>
+  </body>
 </html>
