@@ -104,7 +104,7 @@ form {
 #submit {
   position: relative;
   left: 70%;
-  top: 85px;
+  top: 95px;
   font-size: 20px;
   border: none;
   color: white;
@@ -117,7 +117,7 @@ form {
 }
 
 .input-wrapper {
-  width: 40%;
+  width: 42.5%;
   position: relative;
   height: 50px;
   overflow: hidden;
@@ -146,7 +146,7 @@ form {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #a4a2bc;
   color: #a4a2bc;
 }
 
@@ -154,7 +154,7 @@ form {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -2px;
   height: 100%;
   width: 100%;
   border-bottom: 3px solid #5fa8d3;
