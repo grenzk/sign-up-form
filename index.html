@@ -14,44 +14,59 @@
     </div>
     <div class="row-2">
       <img id="image" src="assets/form_image.png" alt="form image" />
-      <form id="survey-form" action="#" method="get">
+      <form id="survey-form" action="thank_you.html" method="get">
         <fieldset class="field-1">
-          <label for="first-name"
-            >First Name
-            <div><input type="text" id="first-name" name="first-name" /></div>
-          </label>
-
-          <label for="last-name"
-            >Last Name
-            <div><input type="text" id="last-name" name="last-name" /></div>
-          </label>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder=""
+              required
+            />
+            <label for="first-name" class="label-name">
+              <span class="content-name">First Name</span>
+            </label>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder=""
+              required
+            />
+            <label for="last-name" class="label-name">
+              <span class="content-name">Last Name</span>
+            </label>
+          </div>
         </fieldset>
         <fieldset class="field-1">
-          <label for="user_email"
-            >Email
-            <div>
-              <input
-                type="email"
-                id="user_email"
-                name="email"
-                placeholder="you@example.com"
-              />
-            </div>
-          </label>
-
-          <label for="phone-number"
-            >Phone
-            <div>
-              <input
-                type="tel"
-                id="phone-number"
-                name="phone-number"
-                placeholder="123-45-678"
-                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
-                required
-              />
-            </div>
-          </label>
+          <div class="input-wrapper">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+            <label for="email" class="label-name">
+              <span class="content-name-too">Email</span>
+            </label>
+          </div>
+          <div class="input-wrapper">
+            <input
+              type="tel"
+              id="phone-number"
+              name="phone-number"
+              placeholder="(+63) 000-0000"
+              pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+              required
+            />
+            <label for="phone-number" class="label-name">
+              <span class="content-name-too">Phone</span>
+            </label>
+          </div>
         </fieldset>
         <fieldset class="field-2">
           <h1 class="questions">What type of website do you need?</h1>
@@ -97,7 +112,7 @@
           </div>
 
           <h1 class="questions">What type of business do you have?</h1>
-          <div class="radio-buttons">
+          <div class="radio-buttons-too">
             <label for="technology">
               <input
                 type="radio"
@@ -108,12 +123,17 @@
               Technology</label
             >
 
-            <label for="food">
-              <input type="radio" id="food" name="business_type" value="food" />
-              Food
+            <label for="restaurant">
+              <input
+                type="radio"
+                id="restaurant"
+                name="business_type"
+                value="restaurant"
+              />
+              Restaurant
             </label>
 
-            <label for="fashion">
+            <label for="fashion" id="fashion-label">
               <input
                 type="radio"
                 id="fashion"
@@ -122,7 +142,7 @@
               />
               Fashion
             </label>
-            <label for="finance">
+            <label for="finance" id="finance-label">
               <input
                 type="radio"
                 id="finance"
@@ -132,38 +152,17 @@
               Finance
             </label>
           </div>
-
-          <h1 class="questions">Choose Items for the Navigation Bar</h1>
-
-          <div>
-            <input type="checkbox" id="about" name="topping" value="about" />
-            <label for="about">About</label>
-          </div>
-
-          <div>
-            <input type="checkbox" id="faq" name="topping" value="faq" />
-            <label for="faq">FAQ</label>
-          </div>
-
-          <div>
+          <div class="input-wrapper" id="message-wrapper">
             <input
-              type="checkbox"
-              id="User Guide"
-              name="topping"
-              value="User Guide"
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Write your message..."
             />
-            <label for="User Guide">User Guide</label>
+            <label for="message" class="label-name">
+              <span class="content-name-too">Message</span>
+            </label>
           </div>
-
-          <div>
-            <input type="checkbox" id="blog" name="topping" value="blog" />
-            <label for="blog">Blog</label>
-          </div>
-
-          <!-- <label for="message"
-            >Message
-            <div><input type="text" id="message" name="message" /></div>
-          </label> -->
         </fieldset>
         <button type="submit" id="submit">Submit</button>
       </form>
