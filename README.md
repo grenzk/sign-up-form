@@ -1,1 +1,11 @@
 # Survey Form
+
+This project is about the usage of form elements. I managed to find references for the design that I was going for. I learned more about CSS animations and applied them to the input elements. A simple card style design.
+
+## Full Design
+
+![full_page](./assets/screenshots/full_page.png)
+
+## Source
+
+Avion School (https://docs.avionschool.com/avn-mcourse/-MYjabeTubdULkJ4UAcG/lessons/forms/project-survey-form)
