@@ -191,6 +191,16 @@ form {
   transform: translateX(0%);
 }
 
+@media screen and (max-width: 1920px ) {
+  .row-2 {
+    width: 75%;
+  }
+  
+  #submit {
+    top: 30px;
+  }
+}
+
 /* Thank You Page */
 
 #border {
