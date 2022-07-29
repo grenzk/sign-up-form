@@ -9,7 +9,3 @@ This project is about the usage of form elements. I managed to find references f
 ## Live Demo
 
 Github Page (https://grenzk.github.io/survey-form/)
-
-## Source
-
-Avion School (https://docs.avionschool.com/avn-mcourse/-MYjabeTubdULkJ4UAcG/lessons/forms/project-survey-form)
